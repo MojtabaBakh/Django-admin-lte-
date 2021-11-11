@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | My Django Online Shop {% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+<a href="{% url 'admin:index' %}">
+<img src = "{% static 'admin/images/logo.png' %}" style= "width : 50px ; height: auto ;">
+My Django shop
+</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
